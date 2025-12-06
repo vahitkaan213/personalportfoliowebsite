@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - Vahit Kaan</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        .project-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            width: 100%;
+            margin-top: 2rem;
+        }
+
+        .project-card {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            padding: 1.5rem;
+            border-radius: 8px;
+            transition: transform 0.3s ease, background 0.3s ease;
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+            background: rgba(255, 255, 255, 0.05);
+        }
+
+        .project-title {
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: var(--text-primary);
+            margin-bottom: 0.5rem;
+        }
+
+        .project-desc {
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+            line-height: 1.5;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="sidebar">
+        <div class="logo">VK</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="projects.html" class="active">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <main class="content">
+        <section class="hero" style="width: 100%;">
+            <h1>Projects</h1>
+            <div class="project-grid">
+                <div class="project-card">
+                    <div class="project-title">Network Security Tool</div>
+                    <p class="project-desc">A Python-based tool for analyzing network traffic and identifying potential
+                        vulnerabilities.</p>
+                </div>
+                <div class="project-card">
+                    <div class="project-title">Secure Chat App</div>
+                    <p class="project-desc">End-to-end encrypted messaging application built with Node.js and Socket.io.
+                    </p>
+                </div>
+                <div class="project-card">
+                    <div class="project-title">Portfolio Website</div>
+                    <p class="project-desc">This minimalist portfolio website designed to showcase my skills and
+                        projects.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
