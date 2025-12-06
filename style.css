@@ -30,7 +30,8 @@ body {
     left: 0;
     width: var(--sidebar-width);
     height: 100vh;
-    background-color: var(--sidebar-bg);
+    /* background-color: var(--sidebar-bg); REMOVED to blend in */
+    background-color: transparent;
     display: flex;
     flex-direction: column;
     justify-content: center;
