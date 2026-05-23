@@ -435,8 +435,8 @@ h2 {
 }
 
 .social-links .contact-link svg {
-    width: 24px;
-    height: 24px;
+    width: 36px;
+    height: 36px;
     transition: transform 0.3s ease, fill 0.3s ease;
     fill: var(--text-secondary);
 }
