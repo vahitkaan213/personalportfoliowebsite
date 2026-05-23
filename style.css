@@ -538,8 +538,8 @@ h2 {
     }
 
     .logo-img {
-        width: 40px;
-        height: 40px;
+        width: 65px;
+        height: 65px;
     }
 
     .hamburger {
@@ -600,6 +600,37 @@ h2 {
     }
 
     .project-grid {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+
+    .project-info {
+        padding: 0.8rem;
+    }
+
+    .project-title {
+        font-size: 1rem;
+        margin-bottom: 0.3rem;
+    }
+
+    .project-desc {
+        font-size: 0.8rem;
+    }
+
+    .project-img {
+        height: 120px;
+    }
+    
+    .github-card {
+        min-height: 150px;
+    }
+    
+    .github-content {
+        padding: 1rem;
+    }
+    
+    .github-card .arrow {
+        font-size: 1.5rem;
+        margin-top: 0.5rem;
     }
 }
