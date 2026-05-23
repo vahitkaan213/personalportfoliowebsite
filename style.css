@@ -530,7 +530,7 @@ h2 {
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
-        padding: 1rem 1.5rem;
+        padding: 0.5rem 1.5rem;
         background-color: rgba(20, 20, 20, 0.95);
         backdrop-filter: blur(10px);
         border-bottom: 1px solid rgba(255, 255, 255, 0.05);
@@ -538,8 +538,8 @@ h2 {
     }
 
     .logo-img {
-        width: 50px;
-        height: 50px;
+        width: 40px;
+        height: 40px;
     }
 
     .hamburger {
@@ -553,9 +553,9 @@ h2 {
         top: 0;
         right: -100%;
         height: 100vh;
-        width: 250px;
+        width: 180px;
         background-color: var(--sidebar-bg);
-        padding-top: 100px;
+        padding-top: 80px;
         transition: right 0.3s ease;
         z-index: -1;
         box-shadow: -5px 0 15px rgba(0,0,0,0.5);
@@ -572,7 +572,7 @@ h2 {
 
     .page-section {
         padding: 4rem 1.5rem;
-        padding-top: 120px;
+        padding-top: 100px;
     }
 
     .hero h1 {
