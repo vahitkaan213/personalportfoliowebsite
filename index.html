@@ -17,7 +17,12 @@
         <div class="logo">
             <img src="portrait.png" alt="Vahit Kaan" class="logo-img">
         </div>
-        <ul class="nav-links">
+        <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <ul class="nav-links" id="nav-links">
             <li><a href="#home" class="active">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#projects">Projects</a></li>
@@ -254,6 +259,23 @@
 
         sections.forEach(section => {
             observer.observe(section);
+        });
+
+        // Mobile menu toggle
+        const hamburger = document.getElementById('hamburger');
+        const navLinksMenu = document.getElementById('nav-links');
+        
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            navLinksMenu.classList.toggle('active');
+        });
+
+        // Close mobile menu when clicking a link
+        document.querySelectorAll('.nav-links li a').forEach(link => {
+            link.addEventListener('click', () => {
+                hamburger.classList.remove('active');
+                navLinksMenu.classList.remove('active');
+            });
         });
 
         // Update anchor links to use Lenis scrollTo with custom duration
